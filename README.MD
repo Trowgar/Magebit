@@ -17,4 +17,4 @@
 4. Create a new database and upload file *magebit.sql*
 5. You should set up **Config/Database.php** to connect to the database
 6. Start/Restart server
-7. Open browser and enter project name - For Example *Magebit/*
+7. Open browser and enter project name - For Example: *Magebit/*
