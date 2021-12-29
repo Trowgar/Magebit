@@ -1,0 +1,484 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  display: flex;
+}
+
+.content {
+  width: 1920px;
+  background-image: url("/img/bg.jpg");
+  background-position-x: 680px;
+}
+
+.main__wrapper {
+  padding: 100px;
+  width: 680px;
+  height: 1080px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header__left {
+  display: flex;
+  align-items: flex-end;
+}
+
+.brand__name {
+  text-decoration: none;
+  color: #131821;
+  margin-left: 15px;
+  padding-bottom: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  align-items: flex-end;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+.menu__link {
+  margin-left: 30px;
+  display: block;
+  text-decoration: none;
+  color: #6A707B;
+}
+.menu__link:hover {
+  color: #4066A5;
+}
+.menu__link:active {
+  color: #233759;
+}
+
+.content__wrapper {
+  margin-top: 234px;
+}
+
+.success__wrapper {
+  margin-top: 129px;
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  margin-left: 40px;
+}
+
+.cup {
+  margin-bottom: 32px;
+}
+
+.text__content {
+  margin-left: 40px;
+}
+
+.tittle {
+  font-family: Georgia;
+  font-size: 32px;
+  color: #131821;
+  margin-bottom: 15px;
+}
+
+.subtittle {
+  color: #6A707B;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+
+.subs__form {
+  display: flex;
+  width: 663px;
+  margin-bottom: 53px;
+  border-left: 4px solid #4066A5;
+  position: relative;
+}
+
+.subs__input {
+  height: 70px;
+  width: 663px;
+  padding-left: 40px;
+  border: 1px solid #E3E3E4;
+  border-left: 0;
+  outline: 0;
+  outline-offset: 0;
+  font-size: 16px;
+}
+
+.submit {
+  position: absolute;
+  right: 40px;
+  border: none;
+  top: 28px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.subs__form:hover .subs__input {
+  border: 2px solid #4066A5;
+  border-left: 0;
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+.subs__form:hover button svg path {
+  fill: #4066A5;
+  opacity: 1;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
+
+.agree__text {
+  color: #6A707B;
+}
+.agree__text a {
+  color: #000;
+}
+.agree__text a:hover {
+  color: #4066A5;
+}
+.agree__text a:active {
+  color: #233759;
+}
+
+/* checkbox style */
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox] + label {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+input[type=checkbox] + label:before {
+  content: url(/img/SVG/checkmark.svg);
+  border: 1px solid #E3E3E4;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  padding: 3px 6px;
+  margin-right: 15px;
+  color: transparent;
+  cursor: pointer;
+}
+input[type=checkbox]:checked + label:before {
+  background-color: #4066A5;
+  border-color: #4066A5;
+}
+
+/* over style */
+.line {
+  margin-left: 40px;
+  width: 400px;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #E3E3E4;
+  margin-bottom: 50px;
+}
+
+.error {
+  color: red;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.social {
+  margin-left: 118px;
+}
+
+.social__menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 244px;
+}
+
+.social__list {
+  width: 46px;
+  height: 46px;
+  border-radius: 27px;
+  border: 2px solid #E3E3E4;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 13px;
+}
+
+.fab {
+  color: #131821;
+  opacity: 0.3;
+}
+
+.shadow:hover {
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.social__list:hover .fab {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.facebook:hover {
+  background-color: #4267B2;
+  border-color: #4267B2;
+  transition-duration: 0.4s;
+}
+.facebook:active {
+  background-color: #2F4A80;
+  border-color: #2F4A80;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.instagram:hover {
+  background-color: #C13584;
+  border-color: #C13584;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  transition-duration: 0.4s;
+}
+.instagram:active {
+  background-color: #8F2762;
+  border-color: #8F2762;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.twitter:hover {
+  background-color: #1DA1F2;
+  border-color: #1DA1F2;
+  transition-duration: 0.4s;
+}
+.twitter:active {
+  background-color: #177FBF;
+  border-color: #177FBF;
+}
+
+.youtube:hover {
+  background-color: #FF0000;
+  border-color: #FF0000;
+  transition-duration: 0.4s;
+}
+.youtube:active {
+  background-color: #CC0000;
+  border-color: #CC0000;
+}
+
+@media screen and (max-width: 1100px) {
+  .content {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main__wrapper {
+    background: transparent;
+    padding: 0;
+    width: 1100px;
+    height: 812px;
+  }
+
+  .header {
+    padding: 10px 20px 16px 20px;
+    height: 66px;
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  .content__wrapper {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    margin-top: 188px;
+    margin-left: 60px;
+    padding: 30px 20px 0 40px;
+    width: 500px;
+    height: 400px;
+  }
+
+  .success {
+    margin-left: 0;
+  }
+
+  .cup {
+    margin-bottom: 39px;
+  }
+
+  .text__content {
+    margin-left: 0px;
+    width: 400px;
+  }
+
+  .tittle {
+    margin-bottom: 10px;
+  }
+
+  .subtittle {
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .subs__form {
+    width: 499px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+
+  .subs__input {
+    width: 400px;
+    height: 60px;
+    padding-left: 15px;
+  }
+
+  .submit {
+    right: 110px;
+    top: 23px;
+  }
+
+  .terms {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .line {
+    width: 400px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .social {
+    margin-left: 30px;
+  }
+
+  .social__menu {
+    width: 214px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .content {
+    background-position-x: -281px;
+    background-position-y: 66px;
+    background-size: 1119px 746px;
+  }
+
+  .main__wrapper {
+    background: transparent;
+    padding: 0;
+    width: 375px;
+    height: 812px;
+  }
+
+  .header {
+    padding: 10px 20px 16px 20px;
+    height: 66px;
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  .brand__name {
+    display: none;
+  }
+
+  .menu__link {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .content__wrapper {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    margin-top: 188px;
+    margin-left: 20px;
+    padding: 30px 20px 0 20px;
+    width: 335px;
+    height: 371px;
+  }
+
+  .success {
+    margin-left: 0;
+  }
+
+  .cup {
+    margin-bottom: 39px;
+  }
+
+  .text__content {
+    margin-left: 0px;
+    width: 295px;
+  }
+
+  .tittle {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
+
+  .subtittle {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .subs__form {
+    width: 299px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+
+  .subs__input {
+    width: 295px;
+    height: 60px;
+    padding-left: 15px;
+  }
+
+  .submit {
+    right: 15px;
+    top: 23px;
+  }
+
+  .terms {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .line {
+    width: 295px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .error {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .social {
+    margin-left: 30px;
+  }
+
+  .social__menu {
+    width: 214px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

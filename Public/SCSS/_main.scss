@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    display: flex;
+  }
+  
+  .content {
+    width: 1920px;
+    background-image: url("/img/bg.jpg");
+    background-position-x: 680px;
+  }
+  
+  .main__wrapper {
+    padding: 100px;
+    width: 680px;
+    height: 1080px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+  }
